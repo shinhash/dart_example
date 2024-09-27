@@ -17,6 +17,8 @@ void main(){
 
   nameParameters(age:30, email: "shinhash123@gmail.com", name: "hash");
   nameParametersRequired(age:30, email: "shinhash@gmail.com", name: "shinhash");
+
+  dateTime();
 }
 
 
@@ -94,6 +96,7 @@ void collectionFOR(int forCnt){
     for(int numCnt=0; numCnt<forCnt; numCnt++) numCnt+1,
     for(int num in oldForList) num,
   ];
+  print(oldForList.contains(12));
   print("collectionFOR : " + forList.toString());
 }
 
@@ -148,3 +151,9 @@ void nameParametersRequired({required String name, required int age, required St
   // named parameter
   print("my name is $name and i'm $age years old, my email address is $email");
 }
+
+void dateTime(){
+  final DateTime now = DateTime.now();
+  print(now);
+}
+
