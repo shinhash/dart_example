@@ -15,10 +15,17 @@ void main(){
   collectionMapList();
   collectionSet();
 
-  nameParameters(age:30, email: "shinhash123@gmail.com", name: "hash");
+  nameParameters(age:30, name: "hash");
   nameParametersRequired(age:30, email: "shinhash@gmail.com", name: "shinhash");
 
   dateTime();
+
+  Operation operation = add;
+  int result = operation(10, 20, 30);
+  print(result);
+
+  int cal_result = calculation(1,2,3,sub);
+  print(cal_result);
 }
 
 
@@ -157,3 +164,13 @@ void dateTime(){
   print(now);
 }
 
+typedef Operation = int Function(int x, int y, int z);
+
+int add(int x, int y, int z) => x + y + z;
+
+int sub(int x, int y, int z) => x - y - z;
+
+
+int calculation(int x, int y, int z, Operation operation){
+  return operation(x, y, z);
+}
