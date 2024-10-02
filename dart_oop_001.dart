@@ -5,7 +5,7 @@ void main(){
   idol.sayHello();
   idol.introduce();
 
-  Map<String, Object> map = {};
+  Map<String, dynamic> map = {};
   map["name"] = "BTS";
   map["members"] = ["정국", "뷔", "지민", "슈가", "RM", "진", "제이홉"];
 
@@ -25,9 +25,9 @@ void main(){
   BlackPink.introduce();
 
 
-  print(BlackPink is Idol);
-  print(BlackPink is GirlGroup);
-  print(BlackPink is BoyGroup);
+  // print(BlackPink is Idol);
+  // print(BlackPink is GirlGroup);
+  // print(BlackPink is BoyGroup);
 
 
   TimesTwo tt1 = TimesTwo(2);

@@ -17,9 +17,9 @@ class Idol{
   // Idol(String name, List<String> members) : this._name = name, this._members = members;
   Idol(this._name, this._members);
 
-  Idol.namedParamConstructor(Map<String, Object> map) 
-  : this._name = map["members"].toString()
-  , this._members = map["members"] as List<String>
+  Idol.namedParamConstructor(Map<String, dynamic> map) 
+  : this._name = map["name"]
+  , this._members = map["members"]
   ;
 
   void sayHello(){
