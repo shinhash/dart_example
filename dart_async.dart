@@ -1,6 +1,6 @@
 void main() async {
   // Future - 미래
-  Future<String> name = Future.value("코드팩토리 신하승");
+  // Future<String> name = Future.value("코드팩토리 신하승");
 
   // delay
   // 지연 후 실행

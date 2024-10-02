@@ -9,4 +9,5 @@ void main(){
   });
 
   controller.sink.add(1);
+  print(streamListener1);
 }
