@@ -42,3 +42,7 @@ class Idol{
     this._members = members;
   }
 }
+
+abstract interface class HumanService {
+  String selectHumanInfo();
+}
